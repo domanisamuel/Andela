@@ -12,28 +12,32 @@
 # Example​:  andela - andelaway
 # electrician - electricianway 
 
+#include tests
+
+#===================================================================================
+
 #Answer
-user_input = input("Enter word to be translated:\n")
-#change_1
+
+user_input = input("Enter word: ") #get the word to be converted from the input
+
+#first condition
 vowels = ['a','e','i','o','u']
-def translate(user_input): 
+def translate(user_input):
     first = user_input[0]
-#change_2
-    if first in vowels: 
-         user_input = user_input.lower()
-         user_input += "way" 
-         return user_input
-    else: 
+    #second condition
+    if first in vowels:    #If the word starts with a vowel, simply add "way" to the end of the word.
         user_input = user_input.lower()
-#change_3
+        user_input += "way"
+        return user_input
+    else:
+        user_input = user_input.lower()
+    #third conditon
         for letter in user_input:
             if letter in vowels:
                 index_value = user_input.index(letter)
                 break
-#change_4
-        user_input = user_input[index_value:] +user_input[:index_value]+ "ay" 
-        return user_input 
+   #forth condition     (If the word starts with a consonant or group of consonants, move all letters  before the first vowel to the end of the word then add "ay".)
+        user_input = user_input[index_value:] + user_input[:index_value] + "ay"
+        return user_input
 
-print(translate(user_input))
-
-    
+print(translate(user_input))  #output the converted word

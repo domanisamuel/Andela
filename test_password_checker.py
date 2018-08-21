@@ -1,4 +1,7 @@
+#unittest
+
 import unittest
+
 from password_checker import p
 
 class TestCommon(unittest.TestCase):
