@@ -7,8 +7,8 @@
 // Answer
 
 //inputs
-s1 = 'wamlambez'
-s2 = 'wamnyonyez'
+s1 = ''
+s2 = ''
 
 //function that accept two argumants (strings)
 function Ethic (s1, s2) {

@@ -21,3 +21,20 @@
 // ===================================================================================
 
 // Answer
+// input variable
+const password = 'ABd1234@1';
+
+// write a function to validate
+function checkPassword (password) {
+    // set and check the condition
+    const validPassword = /^[A-Za-z]\w{6,12}$#@/; 
+    if (password.value.match(validPassword)) {
+        console.log('Valid!')
+        return true;
+    } else {
+        console.log("Invalid!")
+        return false;
+    }
+}
+// call the function
+checkPassword(password)
