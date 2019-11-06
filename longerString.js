@@ -13,8 +13,8 @@ s2 = ''
 //function that accept two argumants (strings)
 function Ethic (s1, s2) {
     // let's initialize our variables
-    let sentence1 = this.s1
-    let sentence2 = this.s2
+    let sentence1 = s1
+    let sentence2 = s2
     // create a condition to determine the longest string
     if (sentence1.length > sentence2.length) {
         console.log(sentence1) // outputs the longest string
@@ -28,4 +28,4 @@ function Ethic (s1, s2) {
 }
 
 //call the function
-Ethic(s1, s2) // output: wamnyonyez
+Ethic(s1, s2) 
